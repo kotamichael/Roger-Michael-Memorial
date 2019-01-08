@@ -39,6 +39,10 @@ gem 'dotenv-rails'
 #Pagination for index page
 gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
+gem 'faker',                   '1.7.3'
+gem 'i18n',                    '~> 0.5'
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -61,6 +65,10 @@ group :test do
 	gem 'minitest-reporters',       '>= 1.1.9'
 	gem 'guard',                    '>= 2.13.0'
 	gem 'guard-minitest',           '>= 2.4.4'
+end
+
+group :production do
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
