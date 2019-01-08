@@ -36,6 +36,10 @@ gem 'jbuilder', '~> 2.5'
 #Secures environment variables for postgres
 gem 'dotenv-rails'
 
+#Pagination for index page
+gem 'will_paginate',           '3.1.6'
+gem 'bootstrap-will_paginate', '1.0.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
