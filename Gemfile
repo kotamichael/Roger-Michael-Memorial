@@ -9,6 +9,7 @@ end
 gem 'rails', '~> 5.0.1'
 gem 'bcrypt',    '3.1.12', :require => 'bcrypt'
 gem 'pg', '>= 0.18.4'
+
 # Use Puma as the app server
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'puma', '~> 3.4'
