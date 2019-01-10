@@ -6,7 +6,11 @@ class StaticPagesController < ApplicationController
 		end
 	end
 
-	def help
+	def share
+		if logged_in?
+			@micropost  = current_user.microposts.build
+		end
+		@feed_items = Micropost.order(:id).paginate(page: params[:page])
 	end
 
 	def about

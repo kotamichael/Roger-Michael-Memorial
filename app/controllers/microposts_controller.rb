@@ -5,11 +5,11 @@ class MicropostsController < ApplicationController
 	def create
 		@micropost = current_user.microposts.build(micropost_params)
 	    if @micropost.save
-			flash[:success] = "Micropost created!"
-			redirect_to root_url
+			flash[:success] = "Thank you for sharing!"
+			redirect_to share_url
 	    else
 	    	@feed_items = []
-			render 'static_pages/home'
+			render 'static_pages/share'
 	    end
 	end
 

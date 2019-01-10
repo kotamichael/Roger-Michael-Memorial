@@ -8,20 +8,17 @@
 
 	<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary outline" %>
 </div>
-<br><br><br>
-<% if logged_in? %>
-  <div class="row">
-    <aside class="col-md-4">
-      <section class="user_info">
-        <%= render 'shared/user_info' %>
-      </section>
-      <section class="micropost_form">
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-    <div class="col-md-8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
-    </div>
-  </div>
- <% end %>
+
+<hr>
+
+<div class="bio">
+	<div class="bio-pic">
+		<%= image_tag("Roger_Michael.jpg", :size => 350, :alt => "Roger Michael") %>
+	</div>
+
+	<h1>Bio</h1>
+
+	<p><strong style="font-weight: bolder">ROGER MARK MICHAEL</strong>, 64, departed this life for the next on January 5, 2019.  Born on July 1, 1955, in Clarksburg WV to Ernest and Martha Michael, and he was a graduate of South Harrison High School.  Roger resided in Fort Wayne IN with his wife of 25 years.</p>
+
+	<p style="margin-top: 2vh;">Roger is survived by his wife Dacia, his three sons, Jeremy Michael (Amber), Dakota Michael and Dawson Michael (Jessica), and his three grandchildren Joshua, Lauri Ann and Rylie Marcella.  He is also survived by two sisters, and two brothers, Frankie Kelley (Layton), Connie Reynolds (Ken), Jeff Michael, Tim Michael (Raelynn), as well as twelve nieces and nephews.  Roger was preceded by both his parents, and his brother Lynn Michael.</p>
+</div>
