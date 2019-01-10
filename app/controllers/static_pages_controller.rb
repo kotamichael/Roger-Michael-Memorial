@@ -16,6 +16,9 @@ class StaticPagesController < ApplicationController
 	def information
 	end
 
+	def bio
+	end
+
 	def contact
 	end
 end

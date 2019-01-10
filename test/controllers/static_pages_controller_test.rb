@@ -9,7 +9,13 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get root_path
     assert_response :success
-    assert_select "title", "Roger Mark Michael | In Memoriam"
+    assert_select "title", "#{@base_title}"
+  end
+
+  test "should get bio" do
+    get bio_path
+    assert_response :success
+    assert_select "title", "Biography | #{@base_title}"
   end
 
   test "should get share" do
