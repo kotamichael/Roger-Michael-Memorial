@@ -13,6 +13,22 @@ $gray-medium-light: #eaeaea;
 
 /* sidebar */
 
+.card {
+	position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+	word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1rem 2.5rem rgba(0,0,0,.075)!important;
+    padding: 2rem;
+}
+
 aside {
 	section.user_info {
 		margin-top: 20px;
@@ -167,6 +183,10 @@ footer {
 }
 
 /* miscellaneous */
+
+.jumbotron {
+	box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.075) !important;
+}
 
 .debug_dump {
 	clear: both;

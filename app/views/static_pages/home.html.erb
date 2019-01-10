@@ -11,6 +11,38 @@
 
 <hr>
 
+<div class="row mb-2">
+	<div class="col-md-6">
+		<div class="card flex-md-row mb-4">
+			<div class="card-body">
+				<div class="card-text">
+					<h3 class="card-title">Share your memories</h3>
+					<p class="card-text">Sign up with your e-mail and post your thoughts, memories, and photos with the rest of Roger's family and friends.</p>
+				</div>
+			</div>
+			<div class="card-link">
+				<%= link_to "Make a post", share_path %>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="card flex-md-row mb-4">
+			<div class="card-body">
+				<div class="card-text">
+					<h3 class="card-title">Find Service Information</h3>
+					<p class="card-text">There will be two services. One in West Virginia and one in Fort Wayne. Follow the link below to learn more./p>
+				</div>
+			</div>
+			<div class="card-link">
+				<%= link_to "Click for more", information_path %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr>
+
 <div class="bio jumbotron p-3 p-md-5 text-white rounded bg-dark">
 	<div class="bio-pic img-thumbnail">
 		<%= image_tag("Headshot.jpg", :size => 350, :alt => "Roger Michael") %>
