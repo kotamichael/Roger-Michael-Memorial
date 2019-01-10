@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 	root   'static_pages#home'
 	get    '/share',   to: 'static_pages#share'
-	get    '/about',   to: 'static_pages#about'
+	get    '/information',   to: 'static_pages#information'
 	get    '/contact', to: 'static_pages#contact'
 	get    '/signup',  to: 'users#new'
 	post   '/signup',  to: 'users#create'

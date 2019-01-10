@@ -13,7 +13,7 @@ class StaticPagesController < ApplicationController
 		@feed_items = Micropost.order(:id).paginate(page: params[:page])
 	end
 
-	def about
+	def information
 	end
 
 	def contact
