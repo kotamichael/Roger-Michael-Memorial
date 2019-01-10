@@ -20,24 +20,42 @@
 	}
 }
 
-.bio {
+.bio.jumbotron.p-3.p-md-5.text-white.rounded.bg-dark {
 	font-size: 1.35vw;
 	letter-spacing: 0.125vw;
+	text-align: center;
 
 	h1 {
-		font-size: 10vh;
 		margin-top: 4vh;
 	}
 
 	.bio-pic {
-		float: left;
-		height: 350px;
-		width: 350px;
 		margin-top: 3.5vw;
-		margin-right: 4vw;
-		margin-bottom: 5vw;
+		margin-bottom: 3vw;
 		img {
+			display: block;
 			border-radius: 6px;
+		}
+	}
+}
+
+@media (min-width: 1199.98px) {
+	.bio.jumbotron.p-3.p-md-5.text-white.rounded.bg-dark {
+		font-size: 1.35vw;
+		letter-spacing: 0.125vw;
+		text-align: left;
+
+		h1 {
+			margin-top: 4vh;
+		}
+
+		.bio-pic {
+			float: left;
+			margin-right: 2.5vw;
+			margin-bottom: 1.1vw;
+			img {
+				border-radius: 6px;
+			}
 		}
 	}
 }
