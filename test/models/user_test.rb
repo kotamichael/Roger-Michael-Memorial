@@ -90,4 +90,12 @@ class UserTest < ActiveSupport::TestCase
 	    michael.unfollow(eld)
 	    assert_not michael.following?(eld)
 	end
+
+	test "associated food posts should be destroyed" do
+    @user.save
+    @user.foods.create!(content: "Lorem ipsum")
+    assert_difference 'Food.count', -1 do
+      @user.destroy
+    end
+  end
 end

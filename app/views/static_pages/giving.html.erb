@@ -1,0 +1,38 @@
+<% provide(:title, "Giving") %>
+<h1 style="font-size: 7rem; font-weight: bold;">Giving</h1>
+
+<div class="card">
+	<div class="row">
+		<% if logged_in? %>
+			<div class="col-md-7">
+		<% else %>
+			<div class="col">
+		<% end %>
+				<h1>Instructions for Food gifts</h1>
+
+				<p>Food donations will only be accepted at the Fort Wayne service.  BBQ meats and drinks will be provided, but if you would like to bring any other entree, sides, dessert etc. you're welcome to do so. Please note below what you plan to bring. This helps us keep track of what is being brought, and alerts others who might bring something similar.</p>
+
+				<p style="margin-top: 2vh;"></p>
+			</div>
+			<% if logged_in? %>
+			<aside class="col-md-5">
+			    <section class="user_info">
+			    	<%= render 'shared/user_info' %>
+			    </section>
+			    <section class="giving_form">
+			    	<%= render 'shared/giving_form' %>
+			    </section>
+		    </aside>
+		<% end %>
+		</div>
+	</div>
+</div>
+
+<p>
+	<div class="row">
+		<div class="col-md-8">
+		  <h3>What people are bringing so far</h3>
+		  <%= render 'shared/gifts' %>
+		</div>
+	</div>
+</p>

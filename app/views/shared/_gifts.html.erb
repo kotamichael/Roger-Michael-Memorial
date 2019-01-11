@@ -1,0 +1,6 @@
+<% if @gift_items.any? %>
+  <ol class="gifts">
+    <%= render @gift_items %>
+  </ol>
+  <%= will_paginate @gift_items %>
+<% end %>
