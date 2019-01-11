@@ -2,6 +2,21 @@
 <h1 style="font-size: 7rem; font-weight: bold;">Giving</h1>
 
 <div class="card">
+	<div class="row gofundme">
+		<div class="col-md-4">
+			<iframe class='gfm-media-widget' image='1' coinfo='1' width='100%' height='100%' frameborder='0' id='roger-michael-funeral-campaign'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
+		</div>
+		<aside class="col-md-8">
+			<div class="card card-gofundme">
+			    <h3 style="font-size: 6rem; text-align: center;"><strong>GoFundMe</strong></h3>
+			    <p>If you'd like to make a donation to the family in lieu of flowers, the Michael family is accepting donations through GoFundMe.  This fund was established to help offset the costs acrued in caring for Roger in his last days and funeral expenses.</p>
+			</div>
+	    </aside>
+		</div>
+	</div>
+</div>
+
+<div class="card">
 	<div class="row">
 		<% if logged_in? %>
 			<div class="col-md-7">
@@ -24,15 +39,10 @@
 			    </section>
 		    </aside>
 		<% end %>
-		</div>
 	</div>
 </div>
 
-<p>
-	<div class="row">
-		<div class="col-md-8">
-		  <h3>What people are bringing so far</h3>
-		  <%= render 'shared/gifts' %>
-		</div>
-	</div>
-</p>
+<div class="card">
+	<h3>What people are bringing so far</h3>
+	<%= render 'shared/gifts' %>
+</div>
