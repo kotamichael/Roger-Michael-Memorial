@@ -8,6 +8,7 @@ class FoodsController < ApplicationController
 	    	flash[:success] = "Thank you for your gift!"
 	    	redirect_to giving_url
 	    else
+	    	@gift_items = []
 	    	render 'static_pages/giving'
 	    end
 	end
@@ -25,7 +26,7 @@ class FoodsController < ApplicationController
 	    end
 
 	    def correct_user
-	        @food = current_user.food.find_by(id: params[:id])
-	        redirect_to giving_url if @food.nil?
+	        @food = current_user.foods.find_by(id: params[:id])
+	        redirect_to root_url if @food.nil?
 	    end
 end

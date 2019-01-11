@@ -4,7 +4,7 @@ class StaticPagesController < ApplicationController
 			@micropost  = current_user.microposts.build
 			@food = current_user.foods.build
 			@feed_items = current_user.feed.paginate(page: params[:page])
-			@gift_items = Food.order(:id).paginate(page: params[:page])
+			@gift_items = current_user.food_feed.paginate(page: params[:page])
 		end
 	end
 

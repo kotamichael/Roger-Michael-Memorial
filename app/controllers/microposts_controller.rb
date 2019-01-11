@@ -16,10 +16,11 @@ class MicropostsController < ApplicationController
 	def destroy
 	    @micropost.destroy
 	    flash[:success] = "Your post was deleted"
-	    redirect_to request.referrer || post_url
+	    redirect_to request.referrer || share_url
 	end
 
 	private
+	
 		def micropost_params
 			params.require(:micropost).permit(:content, :picture)
 	    end
