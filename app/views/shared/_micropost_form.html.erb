@@ -3,7 +3,10 @@
   <div class="field">
     <%= f.text_area :content, placeholder: "Share your thoughts/memories" %>
   </div>
-  <%= f.submit "Post", class: "btn btn-primary" %>
+  <div class="col-md-4">
+    <%= f.submit "Post", class: "btn btn-primary" %>
+  </div>
+  <br><br>
   <span class="picture">
     <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
   </span>
