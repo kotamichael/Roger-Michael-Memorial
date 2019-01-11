@@ -9,6 +9,8 @@ class StaticPagesController < ApplicationController
 	def share
 		if logged_in?
 			@micropost  = current_user.microposts.build
+		else
+			flash[:danger] = "You must be logged in to make posts!"
 		end
 		@feed_items = Micropost.order(:id).paginate(page: params[:page])
 	end

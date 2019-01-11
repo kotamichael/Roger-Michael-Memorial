@@ -30,6 +30,9 @@ $gray-medium-light: #eaeaea;
 }
 
 aside {
+	textarea {
+	font-size: 2rem;
+	}
 	section.user_info {
 		margin-top: 20px;
 	}
@@ -46,13 +49,18 @@ aside {
 			line-height: 1;
 		}
 		h1 {
-			font-size: 1.4em;
+			font-weight: bold;
+			font-size: 3rem;
 			text-align: left;
 			letter-spacing: -1px;
 			margin-bottom: 3px;
 			margin-top: 0px;
 		}
 	}
+}
+
+input.btn.btn-primary {
+	font-size: 2rem;
 }
 
 .gravatar {
@@ -93,6 +101,12 @@ textarea {
 	resize: veritcal;
 }
 
+.container.container-header {
+	margin-right:0;
+	margin-left:0;
+	width: 100%;
+}
+
 .center {
 	text-align: center;
 	h1 {
@@ -123,9 +137,29 @@ h2 {
 	color: $gray-light;
 }
 
-p{
-	font-size: 1.1em;
+.navbar-inverse .navbar-nav > li > a {
+	font-size: 1.75rem;
+}
+
+p {
+	font-size: 2.2em;
 	line-height: 1.7em;
+}
+
+label {
+	font-size: 2.2rem;
+}
+
+span {
+	font-size: 2.2rem;
+}
+
+input.form-control {
+	font-size: 2.2rem;
+}
+
+.alert {
+	font-size: 2.2rem;
 }
 
 /* header */
