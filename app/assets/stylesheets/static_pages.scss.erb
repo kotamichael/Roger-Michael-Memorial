@@ -10,8 +10,16 @@ dt, dd {
 	font-size: 2rem;
 }
 
-.carousel-item {
+.carousel-control.left, .carousel-control.right {
+  left: 0;
+  z-index: 1;
+}
+
+.item {
 	height: 100vh;
+	img {
+		height: 100vh!important;
+	}
 	h1 {
 		font-size: 6em;
 	}

@@ -10,8 +10,11 @@ gem 'rails', '~> 5.0.1'
 gem 'bcrypt',    '3.1.12', :require => 'bcrypt'
 gem 'pg', '>= 0.18.4'
 
+#Bootstrap
+gem 'bootstrap', '~> 4.2.1'
+gem 'popper_js'
+
 # Use Puma as the app server
-gem 'bootstrap-sass', '~> 3.3.6'
 gem 'puma', '~> 3.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
