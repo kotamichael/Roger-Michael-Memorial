@@ -11,7 +11,7 @@ gem 'bcrypt',    '3.1.12', :require => 'bcrypt'
 gem 'pg', '>= 0.18.4'
 
 #Bootstrap
-gem 'bootstrap', '~> 4.2.1'
+gem "bootstrap", ">= 4.3.1"
 gem 'popper_js'
 
 # Use Puma as the app server
